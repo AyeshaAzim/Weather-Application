@@ -1,0 +1,169 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+ }
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+    display: block;
+ }
+ article {
+    width: 100%;
+    text-align: center;
+    background: black;
+    overflow: auto;
+    border:1px solid #fff;
+ }
+ #caption {
+    text-align: center;
+    width: 100%;
+    float: left;
+    clear: left;
+    margin: 0.5em 0;
+    font-weight: bold;
+    color: whitesmoke; 
+ }
+ #map {
+    min-height: 400px;
+    width: 100%;
+    float: left;
+    clear: left;
+    color: whitesmoke;
+ }
+ @media all and (max-width: 500px) {
+    h1 {
+       font-size: 24px;
+    }
+ }
+ button{   
+   color:#fff;
+   background:black;
+   border:1px solid white;
+   padding:10px 30px;
+   font-family:'DM sans';
+   font-size:14px;
+   font-weight:700;
+   letter-spacing:2px; 
+   text-transform:uppercase;
+   margin:20px auto;
+   display:block;
+   transition: all 0.5s ease;
+}
+button:hover{
+   color:black;
+   opacity:1;
+   background:transparent;
+   transition:all 0.5s ease;
+}
+
+input[type=text]{
+   width:30vw;
+   padding:12px 20px;
+   display:block;
+   box-sizing:border-box;
+   outline:none;
+   text-align:center;
+   margin:20px auto;
+   background-color: black;
+   color:#fff;
+   border:1px solid #fff;
+   opacity:0.8;
+   font-size:16px;
+}
+input[type=text]::placeholder{
+   color:#fdfdfd;
+   opacity:0.6;
+   font-size:14px;
+   font-weight:700;
+   letter-spacing:2px; 
+   text-transform:uppercase;
+}
+body, html{
+   height: 100%;
+   display: grid;
+   font-family: sans-serif;
+   background-image: url(background9.jpg);
+   background-size:cover;
+   background-position:center;
+   position: relative;
+} 
+#weatherApp{
+   border: 1px solid #dfdfdf;
+   background-color:black;
+   width: 100%;
+   padding: 1em;
+   color: #dfdfdf;
+   font-family: sans-serif;
+}
+#choice{
+   border: 1px solid #dfdfdf;
+   background-color: black;
+   width: 100%;
+   padding: 1em;
+   color: #dfdfdf;
+   font-family: sans-serif;
+}
+main{
+   margin: auto;
+   padding: 2em;
+   background-color:rgba(0,0,0,0.6);
+   width:40%;
+   height:100%;
+}
+#search{
+   display: block;
+   font-size: 1em;
+}
+h2{
+   font-size: 2.5em;
+   font-weight: bold;
+   text-align: center;
+}
+h1{
+   font-size: 25px;
+   font-family: 'DM sans';
+   font-weight: 700;
+   text-align: center;
+   color: #dfdfdf;
+   line-height: 50px;
+   text-transform: uppercase;
+   padding: 0px;
+}	
+h1::after{
+   content:"";
+   display:block;
+   width:14vw;
+   border-bottom: 2px solid #cfd7df;
+   margin:auto;
+}	
+#weatherUpdate{
+   color: #dfdfdf;
+   font-weight: bold;
+}
+hr{
+   border-style: none;
+   border-top-style: dotted;
+   border-width: 12px;
+   width: 20%;
+   border-color: #fdfdfd;
+}

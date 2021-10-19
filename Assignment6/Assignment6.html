@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="Assignment6.css" />
+</head>
+
+<body>
+    <main>
+        <h1>My Weather App</h1>
+        <br />
+        <button id="search">Show weather at my Current Location</button>
+        <br />
+        <p id="weatherUpdate">Hit the button abouve to retrieve the weather information of your current location! </p>
+        <br />
+
+    <div id="weatherApp">
+        
+        <p>No Weather Information</p>
+    </div>
+    <br />
+    <br />
+    
+<!-- *Map* -->
+
+<article>
+    <div id="caption">
+       Your Current location
+    </div>
+    <div id="map"></div>
+ </article>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnhNIc55-nwsKi5D4KgGF04rwxd4g48jE&callback=geoTest&libraries=&v=weekly"defer></script>
+<br>
+ <hr>
+<!-- *User Location Input* -->
+
+    <br />
+    <label for="location"></label>
+    <input type="text" id="location" placeholder="Enter the Location to see the weather" required>
+    <button id="okBtn" onclick="okBtnClick()">Ok</button>
+    <div id="choice">
+    <p id="result">Result: </p>
+    </div>
+    <br />
+</main>
+    <script src="Assignment6.js"></script>
+</body>
+</html>
